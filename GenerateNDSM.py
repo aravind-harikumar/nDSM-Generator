@@ -18,13 +18,13 @@ from sklearn.preprocessing import Normalizer
 def GenerateNDSM():
 
     ParamsDict = {
-        'base_path'         : '/home/ensmingerlabgpu/Desktop/AgisoftProjects/tmp_csi_data/FM/20170811/',
+        'base_path'         : '/BaseFolder/',
         'dem_file_name'     : 'DEM.tif',
         'dsm_file_name'     : 'DSM.tif',
         'ndsm_file_name'    : 'nDSM.tif',
         'ndsm_min_ht'       : 0, # lower limit
         'ndsm_max_ht'       : 20, # upper limit
-        'StudyAreaShp'      : '/mnt/4TBHDD/Spruce_Up_New_Copy/SpruceUp/Site_info/ArcGIS/StCasimir_SpruceUp_temp_rh.shp',
+        'StudyAreaShp'      : '/Mask.shp',
         'HistogramEqualize' : True,
         'crs'               : 'EPSG:32619', # Reference System EPSG  Proj_iD = 'EPSG:32619'
     }
@@ -110,20 +110,3 @@ class NDSM_Generator_Class():
         return self
 
 GenerateNDSM()
-
-
-        # oop = RasterOperators.ReadImage(os.path.join(self.base_path,self.ndsm))
-        # oopdata =oop.read(1)
-        # # oosp = np.max(oop.read(1))
-        # print(oopdata)
-        # print([np.amin(oopdata),np.amax(oopdata)])
-
-        #  with rasterio.open(os.path.join(base_path,dsm)) as dem_src:
-#         meta = dem_src.meta
-#         with rasterio.open(os.path.join(base_path,ndsm), 'w', **meta) as ndsm_dst:
-#             for bandId in range(1,dem_src.count+1):
-#                 dem_band_item = dem_src.read(bandId)
-#                 dem_band_item[dem_band_item<80] = 80
-#                 ndsm_dst.write_band(bandId, dem_band_item)
-
-
