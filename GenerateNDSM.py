@@ -18,7 +18,7 @@ from sklearn.preprocessing import Normalizer
 def GenerateNDSM():
 
     ParamsDict = {
-        'base_path'         : '/BaseFolder/',
+        'base_path'         : './BaseFolder/',
         'dem_file_name'     : 'DEM.tif',
         'dsm_file_name'     : 'DSM.tif',
         'ndsm_file_name'    : 'nDSM.tif',
