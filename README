@@ -1,1 +1,7 @@
-Normalized Digital Surface Model Generator
+The Module Generates Normalized Digital Surface Model by sutracting the Input Digital Surface Model from Input Digital Elevation Model.
+
+Syntax:
+python GenerateNDSM.py
+
+NOTE:
+a) Python version should be >= 3.7.
