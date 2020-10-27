@@ -1,3 +1,9 @@
+"""
+    Platform: Unix, Windows
+    Synopsis: A module for raster operations
+    Author: Aravind Harikumar <aravindhari1@gmail.com>
+"""
+
 import rasterio
 import os
 import math
