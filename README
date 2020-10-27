@@ -1,4 +1,4 @@
-The Module Generates Normalized Digital Surface Model by sutracting the Input Digital Surface Model from Input Digital Elevation Model.
+The Module Generates Normalized Digital Surface Model by sutracting the Input Digital Elevation Model from Input Digital Surface Model.
 
 Syntax:
 python GenerateNDSM.py
